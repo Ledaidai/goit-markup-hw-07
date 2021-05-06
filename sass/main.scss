@@ -1,0 +1,46 @@
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./components/page-header";
+
+$color: blue;
+$width: 100px;
+body {
+  background-color: $color;
+  width: $width;
+}
+
+.secrion {
+  color: red;
+
+  .title {
+    color: green;
+  }
+
+  .text {
+    color: yellow;
+
+    &--red {
+      color: red;
+    }
+  }
+}
+
+.section {
+  color: green;
+
+  &__title {
+    color: red;
+
+    &--red {
+      color: red;
+    }
+  }
+}
+
+.section__text {
+  color: red;
+
+  &:hover {
+    color: rosybrown;
+  }
+}
