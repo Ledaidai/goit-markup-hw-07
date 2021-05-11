@@ -10,13 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
   <!-- Шапка сайта -->
   <header class="header">
-    <div class="container header-container">
+    <div class="header-container">
       <nav class="nav header-nav">
         <a href="./index.html" class="link logo"><span class="logo-first">Web</span>Studio</a>
   
@@ -28,8 +28,25 @@
       </nav>
   
       <ul class="list header-contacts">
-        <li class="item"><a href="" class="link">info@devstudio.com</a></li>
-        <li class="item"><a href="" class="link">+38 096 111 11 11</a></li>
+        <li class="item">
+          <a href="mailto:info@devstudio.com" class="link contacts-content">
+            <svg class="header-icon header-icon-mail">
+              <use href="./images/sprite.svg#icon-header-mail">
+              </use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+  
+        <li class="item">
+          <a href="tel:+38 096 111 11 11" class="link contacts-content">
+            <svg class="header-icon header-icon-phone">
+              <use class="svg-icon-phone" href="./images/sprite.svg#icon-header-phone">
+              </use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
       </ul>
     </div>
   </header>
@@ -162,15 +179,64 @@
   
   <!-- Footer -->
   <footer class="footer-section">
-    <div class="container">
-      <a href="./index.html" class="link logo-footer">
-        <span class="logo-first">Web</span><span class="logo-second">Studio</span>
-      </a>
-      <address>
-        <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-        <p><a href="mailto:info@example.com" class="contacts link email">info@example.com</a> </p>
-        <p><a href="tel:+38 099 111 11 11" class="contacts link">+38 099 111 11 11</a></p>
-      </address>
+    <div class="container footer-container">
+      <div>
+        <a href="./index.html" class="link logo-footer">
+          <span class="logo-first">Web</span><span class="logo-second">Studio</span>
+        </a>
+        <address>
+          <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+          <p><a href="mailto:info@example.com" class="contacts link email">info@example.com</a> </p>
+          <p><a href="tel:+38 099 111 11 11" class="contacts link">+38 099 111 11 11</a></p>
+        </address>
+      </div>
+  
+      <div class="container-social">
+        <h3 class="social-title">Присоединяйтесь</h3>
+        <ul class="list footer-social">
+          <li class="item">
+            <a href="">
+              <svg class="footer-svg">
+                <use href="./images/sprite.svg#icon-footer-insta"></use>
+              </svg>
+            </a>
+          </li>
+  
+          <li class="item">
+            <a href="">
+              <svg class="footer-svg">
+                <use href="./images/sprite.svg#icon-footer-twitter"></use>
+              </svg>
+            </a>
+          </li>
+  
+          <li class="item">
+            <a href="">
+              <svg class="footer-svg">
+                <use href="./images/sprite.svg#icon-footer-fb"></use>
+              </svg>
+            </a>
+          </li>
+  
+          <li class="item">
+            <a href="">
+              <svg class="footer-svg">
+                <use href="./images/sprite.svg#icon-footer-in"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="form-container">
+        <label for="mail" class="form-title">Подпишитесь на рассылку</label>
+        <div>
+          <input type="email" name="mail" id="mail" placeholder="E-mail" autocomplete="on" class="form-input">
+  
+          <button class="button primary">Подписаться</button>
+        </div>
+  
+      </div>
     </div>
   </footer>
 

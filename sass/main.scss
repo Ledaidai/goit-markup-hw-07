@@ -1,46 +1,80 @@
 @import "./utils/variables";
 @import "./base/normalize";
 @import "./components/page-header";
+@import "./components/buttons";
+@import "./components/modals";
+@import "./components/footer";
+@import "./components/main-hero";
+@import "./components/main-features";
+@import "./components/main-works";
+@import "./components/main-team";
+@import "./components/main-clients";
+@import "./components/portfolio-cards";
 
-$color: blue;
-$width: 100px;
-body {
-  background-color: $color;
-  width: $width;
+html {
+  box-sizing: border-box;
 }
 
-.secrion {
-  color: red;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  .title {
-    color: green;
-  }
+body {
+  background-color: $bcg-white;
+  color: $main-lightgrey-text;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
 
-  .text {
-    color: yellow;
+.list {
+  list-style: none;
+  padding: 0;
+}
 
-    &--red {
-      color: red;
-    }
-  }
+.link {
+  text-decoration: none;
 }
 
 .section {
-  color: green;
-
-  &__title {
-    color: red;
-
-    &--red {
-      color: red;
-    }
-  }
+  padding-bottom: 94px;
 }
 
-.section__text {
-  color: red;
+.section-wide {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
-  &:hover {
-    color: rosybrown;
-  }
+.section-title {
+  color: var(--main-grey-text);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

@@ -1,0 +1,135 @@
+.footer-section {
+  background-color: $bcg-dark;
+}
+
+.footer-container {
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
+  display: inline-block;
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.logo-second {
+  color: $white-text;
+}
+
+.footer-section .address {
+  color: $white-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+}
+
+.footer-section .contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-section .email {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.footer-section .contacts:hover,
+.footer-section .contacts:focus {
+  color: $accent-color;
+}
+
+.container-social {
+  display: flex;
+  flex-direction: column;
+  margin-top: 72px;
+  margin-left: 70px;
+}
+
+.social-title {
+  color: $white-text;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social .item + .item {
+  margin-left: 10px;
+}
+
+.footer-social > .item {
+  display: flex;
+  background-color: #44454e;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social > .item:hover,
+.footer-social > .item:focus {
+  background-color: $accent-color;
+  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill: $white-text;
+  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 72px;
+  margin-left: 70px;
+}
+
+.form-title {
+  color: $white-text;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.form-input {
+  width: 359px;
+  height: 50px;
+  background-color: $bcg-dark;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  margin-right: 12px;
+}
