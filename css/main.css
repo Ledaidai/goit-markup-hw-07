@@ -271,15 +271,6 @@ summary {
 
 .header {
   min-height: 84px;
-}
-
-.header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: fixed;
   width: 100%;
   top: 0;
@@ -289,7 +280,20 @@ summary {
   z-index: 10;
 }
 
-.header-nav {
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,7 +327,11 @@ summary {
   margin-left: 93px;
 }
 
-.site-nav .link {
+.site-nav__item {
+  position: relative;
+}
+
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -336,20 +344,15 @@ summary {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .item {
-  position: relative;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
 }
 
-.site-nav .link.current {
+.site-nav__link.current {
   color: #2196f3;
 }
 
-.item.current::after {
+.site-nav__item.current::after {
   display: block;
   content: "";
   width: 100%;
@@ -358,7 +361,7 @@ summary {
   border-radius: 2px;
 }
 
-.site-nav .item + .item {
+.site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
 
@@ -369,7 +372,7 @@ summary {
   margin-left: auto;
 }
 
-.header-contacts .item + .item {
+.header-contacts__item + .header-contacts__item {
   margin-left: 50px;
 }
 
@@ -389,16 +392,7 @@ summary {
   color: #2196f3;
 }
 
-.contacts-content:hover > .header-icon,
-.contacts-content:focus > .header-icon {
-  fill: #2196f3;
-}
-
-.header-icon {
-  fill: #757575;
-}
-
-.contacts-content {
+.header-contacts__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,13 +401,22 @@ summary {
           align-items: center;
 }
 
-.header-icon-mail {
+.header-contacts__content:hover .header-icon,
+.header-contacts__content:focus .header-icon {
+  fill: #2196f3;
+}
+
+.header-icon {
+  fill: #757575;
+}
+
+.header-icon__mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 
-.header-icon-phone {
+.header-icon__phone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
